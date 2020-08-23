@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ESP32-WROOM-32D)(type Legacy)(uri ${KIPRJMOD}/Libraries/ESP32-Wroom-32D/ESP32-WROOM-32D.lib)(options "")(descr ""))
+  (lib (name "ESP32 Drop Controller")(type Legacy)(uri "${KIPRJMOD}/Libraries/ESP32 Drop Controller.lib")(options "")(descr ""))
+)

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "ESP32 Drop Controller")(type KiCad)(uri "${KIPRJMOD}/Libraries/ESP32 Drop Controller.pretty")(options "")(descr ""))
+  (lib (name PacketVis_Footprints)(type KiCad)(uri C:/Users/mccocz/Designs/PacketVis_hardware-master/Libraries/PacketVis_Footprints.pretty)(options "")(descr ""))
+  (lib (name Libraries)(type KiCad)(uri ${KIPRJMOD}/Libraries.pretty)(options "")(descr ""))
+)
