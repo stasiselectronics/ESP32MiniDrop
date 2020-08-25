@@ -3,7 +3,7 @@ Designed in KiCad 5.1.6
 
 This folder contains the source files for the PCB design of the ESP32MiniDrop, along with supporting documentation. Here you can find PDFs of the schematic, an assembly drawing, and gerbers used for fabrication. 
 
-The board design is based off of the ESP32 WROOM 32D microcontroller. This module has WiFi and Bluetooth included, which helps to reduce the auxillary components needed. The board has one screw terminal to attach bare wires to hook up the solenoid coil. The solenoid is controlled with a MOSFET with flyback diode attached. 
+The board design is centered around the ESP32 WROOM 32D module. This has WiFi and Bluetooth included, which helps to reduce the auxillary components needed. The board has one screw terminal to attach bare wires to hook up the solenoid coil. The solenoid is controlled with a MOSFET with flyback diode attached. 
 
 To help load Arduino sketches onto the board, an USB to UART IC is included in the design. This takes the USB data lines and converts them to the RS232 UART signals going to the ESP32. When programming, the script used to flash the chip will take advantage of the DTR and RTS signals to put the EPS32 into boot mode and automatically reset when done. 
 
