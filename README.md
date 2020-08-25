@@ -1,5 +1,6 @@
 # ESP32MiniDrop
-This repository contains the source files for a DIY solenoid controller to use for water drop photography. This project is still a work in progress, so be on the look out for updates.
+This repository contains the source files for a DIY solenoid controller for use with water drop photography. This project is still a work in progress, so make sure to follow to keep up with any future updates!
+
 
 Some features of this design include:
 * Bluetooth / Wifi connectivity
