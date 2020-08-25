@@ -11,7 +11,7 @@ To help load Arduino sketches onto the board, an USB to UART IC is included in t
 This board uses 0603 passive components and small outline packages, so a patient hand and good eyes (or a microscope) will be needed to hand solder. The CP2012N is in a Quad Flat no Lead (QFN) package, and is not an easy part to attach. You can skip the USB to UART chip and instead use the 0.100" programming headers (J5) to load the sketches on the ESP32 manually.
 
 ## Overview
-![alt text](https://github.com/csmccowa/ESP32MiniDrop/raw/master/Hardware%20Files/Assembly/ESP32MiniDrop_Assembly.png "ESP32MiniDrop Board Overview")
+[![](https://github.com/csmccowa/ESP32MiniDrop/raw/master/Hardware%20Files/Assembly/ESP32MiniDrop_Assembly.png)](#)
 
 ## Bill of Materials
 | Reference Designator          | Value              | Quantity | Manufacturer                        |         Part Number |
