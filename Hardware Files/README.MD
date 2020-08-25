@@ -26,7 +26,7 @@ This folder contains the source files for the PCB design of the ESP32MiniDrop, a
 | J4                            | Solenoid Terminal  |     1    | Pheonix Contact                     |             1935161 |
 | Q1 Q2                         | S8050              |     2    | ON Semiconductor                    |       MMBT2222ALT1G |
 | Q3                            | NMOS 60V 46A       |     1    | ON Semiconductor                    |        NTD5865NLT4G |
-| R1, R2, R6, R7, R10, R13, R16 | 10k                |     7    | Yageo                               |     RC0603FR-0710KL |
+| R1, R2, R6, R7, R10, R13, R16 | 10k 1% 0.1W        |     7    | Yageo                               |     RC0603FR-0710KL |
 | R14, R15                      | 220R 1% 0.1W       |     2    | Yageo                               |    RC0603FR-07220RL |
 | R3                            | 22.1K 1% 0.1W      |     1    | Yageo                               |    RC0603FR-0722K1L |
 | R4                            | 47.5K 1% 0.1W      |     1    | Yageo                               |    RC0603FR-0747K5L |
