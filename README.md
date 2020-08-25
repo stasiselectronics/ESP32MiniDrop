@@ -7,9 +7,23 @@ Some features of this design include:
 * 12 V Solenoid Control
 * Shutter Control
 * Android/IOS App
+## Current Status
+
+This project is still in its early stages, so this repository should be considered a work in progress. As of now, here is what has been done:
+- Schematic and Board design are completed and are at first revision: A01
+- A01 Boards currently being fabricated/shipped
+- Parts for small initial prototype ordered
+- 3d printed enclosure designed and ready for first print
+
+## Future Goals
+
+Here's what needs to get done for this project:
+- Develop firmware to enable connection to Android/iOS app
+- Develop Android/iOS app
+- Perform electrical tests on board design
 
 ## Usage
-The goal for this device is to help make water drop photography a snap. Water drop photography focuses on macro shots of water or other liquids at various stages of impact. A electronically controlled valve (or solenoid) positioned above a pool of liquid enables you to use this controller to adjust the timing between succesive drops, the size of the drops themselves, and when to tell the camera to take the picture. By connecting your phone to the controller, you'll be able to dial in these settings and get significantly more repeatable shots than with more manual methods.
+The goal for this device is to help make water drop photography a snap. Water drop photography focuses on macro shots of water or other liquids at various stages of impact. This controller enables you to use an electronically controlled valve (i.e. solenoid) positioned above a pool of liquid, where you can adjust the timing between succesive drops, the size of the drops themselves, and when to tell the camera to take the picture. By connecting your phone to the controller, you'll be able to dial in these settings and get significantly more repeatable shots than with manual methods.
 
 ## What you'll need
 Once you've got an ESP32MiniDrop board in hand, there's a few things needed to get everything ready for pictures. 
