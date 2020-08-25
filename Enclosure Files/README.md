@@ -18,4 +18,4 @@ Using Prusa Slicer 2.2.0 with the following settings gives a print time of 5h 12
 - Infill       | 80%           
 
 ## Overview
-![alt text](https://github.com/csmccowa/ESP32MiniDrop/raw/master/Enclosure%20Files/Images/ESPMiniDrop_Enclosure_Overview.png "Logo Title Text 1")
+[![](https://github.com/csmccowa/ESP32MiniDrop/raw/master/Enclosure%20Files/Images/ESPMiniDrop_Enclosure_Overview.png)]()
