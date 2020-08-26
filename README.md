@@ -12,7 +12,7 @@ Some features of this design include:
 ## Quick Links
 - [Board Schematics (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Schematics_A02.pdf)
 - [Board Drawing (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Assembly_A02.pdf)
-- Enclosure
+- [Enclosure Drawing (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Enclosure%20Files/ESP32MiniDrop_Enclosure_Assembly_Drawing.pdf)
 
 ## Current Status
 
