@@ -10,8 +10,8 @@ Some features of this design include:
 * Android/IOS App
 
 ## Quick Links
-- [Schematics](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Schematics_A02.pdf)
-- [Board Drawing](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Assembly_A02.pdf)
+- [Board Schematics (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Schematics_A02.pdf)
+- [Board Drawing (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Assembly_A02.pdf)
 - Enclosure
 
 ## Current Status
