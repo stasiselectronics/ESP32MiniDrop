@@ -23,7 +23,7 @@ This board uses 0603 passive components and small outline packages, so a patient
 | C9                            | 22uF 6.3V          |     1    | Samsung Electro-Mechanics           |     CL21A226MQQNNNE |
 | D1, D6                        | 40V 2A             |     2    | ON Semiconductor                    |              SS24FL |
 | D2                            | SP0502BAHT         |     1    | Littelfuse Inc.                     |         SP0502BAHTG |
-| D3                            | GREEN 3.2V 20mA    |     1    | Wurth Elektronik                    |       MBR120VLSFT3G |
+| D3                            | GREEN 3.2V 20mA    |     1    | Wurth Elektronik                    |       150120GS75000 |
 | D4                            | BLUE 3.2V 20mA     |     1    | Wurth Elektronik                    |       150120BS75000 |
 | D5                            | 20V 1A             |     1    | ON Semiconductor                    |       MBR120VLSFT3G |
 | D7                            | 600V 5A            |     1    | SMC Diode Solutions                 |            SD560BTR |
