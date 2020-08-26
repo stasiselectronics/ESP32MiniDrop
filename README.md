@@ -1,5 +1,6 @@
+[![](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Enclosure%20Files/Images/ESPMiniDrop_Enclosure_Logo_Small.png)](#)
 # ESP32MiniDrop
-This repository contains the source files for a DIY solenoid controller for use with water drop photography. This project is still a work in progress, so make sure to follow to keep up with any future updates!
+This repository contains the source files for a DIY Bluetooth connected solenoid controller for use with water drop photography. This project is still a work in progress, so make sure to follow and keep up with any future updates!
 
 
 Some features of this design include:
@@ -7,6 +8,12 @@ Some features of this design include:
 * 12 V Solenoid Control
 * Shutter Control
 * Android/IOS App
+
+## Quick Links
+- [Board Schematics (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Schematics_A02.pdf)
+- [Board Drawing (download)](https://github.com/ChandlerMcCowan/ESP32MiniDrop/raw/master/Hardware%20Files/PDFs/ESP32MiniDrop_Assembly_A02.pdf)
+- Enclosure
+
 ## Current Status
 
 This project is still in its early stages, so this repository should be considered a work in progress. As of now, here is what has been done:
