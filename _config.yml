@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: MiniDrop
+baseurl: /ESP32MiniDrop
 email: 
-description: >- # this means to ignore newlines until "baseurl:"
+description:
   Open Source water drop controller, in a small, low cost package. A Bluetooth connected 12V solenoid driver for great water drop photography.
 #twitter_username: username
 #github_username: username
-baseurl: /ESP32MiniDrop
 minimal_mistakes_skin: default
 search: true
 
