@@ -1,5 +1,5 @@
 ---
-title: "Project Title"
+title: "MiniDrop"
 layout: splash
 date: 2016-03-23T11:48:41-04:00
 header:
@@ -8,11 +8,11 @@ header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   actions:
     - label: "View Source on Github"
-      url: "https://github.com/ChandlerMcCowan/Hardware-Pages-Template/"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Here you can write a few words about what this project is and why its great. Include a litte bit more for some extra emphasis"
+      url: "https://github.com/ChandlerMcCowan/ESP32MiniDrop"
+  caption: "Photo credit: [**Pixabay**](https://pixabay.com/photos/drip-water-drop-of-water-liquid-2235618/)"
+excerpt: "Open Source water drop controller, in a small, low cost package; A Bluetooth connected 12V solenoid driver for great water drop photography."
 intro:
-  - excerpt: "Here you can write a longer introduction and guide visitors to the rest of the project. Delete this, or keep it. You're in control of this site and how it looks."
+  - excerpt: "Based on the EPS32 module, this board design focuses on surface mount components just small enough to still be able to hand solder, with a minimal feature set to get a low cost solution for high precision solenoid timing."
 feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -42,11 +42,10 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
-<h2>You can use HTML tags to create headers</h2>
-But you can also use Markdown to add text into the body of the page
+<h2>Want to learn more?</h2>
+Find detailed information in the documentation page, learn how to setup your very own, or check out the latest developments on the blog.
 
-You can use this to describe what is below, and maybe some extra information about what else is around here.
-
+This project is still a work in progress, so be sure to stay tuned for more updates!
 {% include feature_row %}
 
 
