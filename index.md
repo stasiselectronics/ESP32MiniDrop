@@ -17,7 +17,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "Project Overview"
-    excerpt: "Check out how the project works and learn more about what's going on"
+    excerpt: "Learn how everything connects together and what to expect from this device"
     url: "about"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -25,7 +25,7 @@ feature_row:
     alt: "Documentation"
     title: "Documentation"
     url: "docs"
-    excerpt: "Learn more about how the device works, view schematics and CAD files"
+    excerpt: "Learn more about how the device works, view schematics and CAD drawings"
     btn_label: "Read the docs"
     btn_class: "btn--primary"
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
