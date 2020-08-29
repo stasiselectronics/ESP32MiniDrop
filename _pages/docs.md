@@ -11,7 +11,7 @@ Looking to learn more about the details about what's going on under the hood? Ch
 
 <h1>Table of Contents</h1>
 <h2>Hardware</h2>
-- [Schematics](/docs/board/schematics/)
+- [Schematics]({{site.baseurl}}/docs/board/schematics/)
 - [Layout](/docs/board/layout/)
 - [Components](/docs/board/components/)
 - [Assembly](/docs/board/Assembly/)

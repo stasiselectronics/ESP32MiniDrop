@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: MiniDrop
-baseurl: /ESP32MiniDrop
+baseurl: "/ESP32MiniDrop"
 email: 
 description:
   Open Source water drop controller, in a small, low cost package. A Bluetooth connected 12V solenoid driver for great water drop photography.
