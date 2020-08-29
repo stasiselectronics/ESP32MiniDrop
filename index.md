@@ -16,7 +16,6 @@ intro:
   - excerpt: "Based on the EPS32 module, this board design focuses on surface mount components just small enough to still be able to hand solder, with a minimal feature set to get a low cost solution for high precision solenoid timing."
 feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "Project Overview"
     excerpt: "Learn how everything connects together and what to expect from this device"
     url: "about"
