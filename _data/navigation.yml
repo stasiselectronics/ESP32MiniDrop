@@ -19,16 +19,16 @@ docs:
           url: /docs/board/schematics/
         - title: "Board Layout"
           url: /docs/board/layout/
-        - title: "Board Assembly"
-          url: /docs/board/assembly/
         - title: "Components"
           url: /docs/board/components/
+        - title: "Board Assembly"
+          url: /docs/board/assembly/
 
     - title: Enclosure
       children:
-        - title: "3D printing"
-          url: /docs/enclosure/3d-printing/
         - title: "Drawings"
           url: /docs/enclosure/drawings/
+        - title: "3D printing"
+          url: /docs/enclosure/3d-printing/
         - title: "Assembly"
           url: /docs/enclosure/assembly/
