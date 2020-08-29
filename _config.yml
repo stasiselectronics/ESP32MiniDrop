@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MiniDrop
+title: "MiniDrop"
+logo: "/assets/images/ESPMiniDrop_Enclosure_Logo_Med.png"
 baseurl: "/ESP32MiniDrop"
 email: 
 description:
