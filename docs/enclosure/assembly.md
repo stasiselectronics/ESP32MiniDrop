@@ -14,9 +14,9 @@ Here you can write about how to assemble the Enclosure. Maybe you have some deta
 <model-viewer 
 style="width: 100%;
 height: 500px;"
-src="/Hardware-Pages-Template/docs/enclosure/assets/ESPMiniDrop_Enclosure_Assembly.gltf" 
+src="{{site.baseurl}}/docs/enclosure/assets/ESPMiniDrop_Enclosure_Assembly.gltf" 
 auto-rotate 
 exposure="1.0"
-skybox-image="/Hardware-Pages-Template/docs/enclosure/assets/background.png" 
+skybox-image="{{site.baseurl}}/docs/enclosure/assets/background.png" 
 camera-controls>
 </model-viewer>
