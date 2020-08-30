@@ -12,8 +12,7 @@ header:
       url: "https://github.com/ChandlerMcCowan/ESP32MiniDrop"
   caption: "Photo credit: [**Pixabay**](https://pixabay.com/photos/drip-water-drop-of-water-liquid-2235618/)"
 excerpt: "Open Source water drop controller, in a small, low cost package; A Bluetooth connected 12V solenoid driver for great water drop photography."
-intro:
-  - excerpt: "Based on the EPS32 module, this board design focuses on surface mount components just small enough to still be able to hand solder, with a minimal feature set to get a low cost solution for high precision solenoid timing."
+
 feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Project Overview"
