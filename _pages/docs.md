@@ -18,12 +18,12 @@ The board source files were created using KiCad 5, and assembly drawings were cr
 - [Schematics]({{site.baseurl}}/docs/board/schematics/)
 - [Layout]({{site.baseurl}}/docs/board/layout/)
 - [Components]({{site.baseurl}}/docs/board/components/)
-- [Assembly]({{site.baseurl}}/docs/board/Assembly/)
+- [Assembly]({{site.baseurl}}/docs/board/assembly/)
 <h2>Enclosure</h2>
 A 3D printed enclosure for the board was created using FreeCAD 0.18. PDF drawings are available here for easier viewing.
 - [Drawings]({{site.baseurl}}/docs/enclosure/drawings/)
 - [3D Printing]({{site.baseurl}}/docs/enclosure/3d-printing/)
-- [Assembly]({{site.baseurl}}/docs/enclosure/Assembly/)
+- [Assembly]({{site.baseurl}}/docs/enclosure/assembly/)
 <h2>Firmware</h2>
 Still working on the firmware, be sure to check back later for updates!
 <h2>Mobile App</h2>
