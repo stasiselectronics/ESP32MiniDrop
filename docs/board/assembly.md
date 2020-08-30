@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-![]({{site.baseurl}}/docs/board/assets/background.png)
+![]({{site.baseurl}}/docs/board/assets/assembly_top.png)
 
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
