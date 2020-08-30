@@ -9,9 +9,7 @@ Looking for a jump start to getting up and shooting? Check out the [quick start 
 
 Looking to learn more about the details about what's going on under the hood? Check out the documentation below.
 
-For all the latest updates on the source files, make sure to check out the github repository:
-
-<https://github.com/ChandlerMcCowan/ESP32MiniDrop>
+For all the latest updates on the source files, make sure to check out the [github repository](https://github.com/ChandlerMcCowan/ESP32MiniDrop)
 
 <h2>Hardware</h2>
 The board source files were created using KiCad 5, and assembly drawings were created using FreeCAD 0.18. PDF versions are available here for easier viewing.

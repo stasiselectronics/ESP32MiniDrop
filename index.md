@@ -36,9 +36,6 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
-
-{% include feature_row id="intro" type="center" %}
-
 <h2>Want to learn more?</h2>
 Find detailed information in the documentation page, learn how to setup your very own, or check out the latest developments on the blog.
 
