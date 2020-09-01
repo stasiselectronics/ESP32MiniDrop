@@ -3,8 +3,6 @@ title: "Enclosure Print Results"
 excerpt_separator: "<!--more-->"
 categories:
   - Development Post
-header:
-  teaser: "{{site.baseurl}}/assets/images/enclosure.jpg"
 ---
 ![printing]({{site.baseurl}}/assets/images/IMG_7778.jpg)
 
