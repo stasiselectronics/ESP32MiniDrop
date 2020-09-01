@@ -6,4 +6,8 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
-Maybe here you can explain the layout decisions that were made for the design. Highlight any critical features, or something that you would want to show off.
+
+The goal for the board layout is to have all the components on the top side of the board, in as small of an overall board size as possible.
+
+The design is 2 layer, with ground pours on both sides. 
+
