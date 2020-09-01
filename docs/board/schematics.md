@@ -38,4 +38,4 @@ Since the digital logic portion of the design is operating at 3.3V, a Gate Sourc
 ## User Interface
 ![User Buttons]({{site.baseurl}}/docs/board/assets/userbuttons.jpg)
 ## Power Supply
-![Power Supply]({{site.baseurl}}/docs/board/assets/powersupply.jpg.jpg)
+![Power Supply]({{site.baseurl}}/docs/board/assets/powersupply.jpg)
