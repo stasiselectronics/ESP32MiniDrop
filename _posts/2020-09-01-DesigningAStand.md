@@ -72,3 +72,32 @@ To add a nozzle to the outlet port, just use a 1/4 inch NPT hose barb. These can
 Now we can piece together the solenoid, the bracket, the bottle adapter, and the nozzle.
 
 ![Solenoid Assembly]({{site.baseurl}}/assets/images/SolenoidAssembly.png){:height="50%" width="50%"}{: .align-center}
+
+## Attaching to a tripod or light stand
+Instead of worrying about designing our own stand, we should just use the standard mounting threads so that we can attach to any photography stand or tripod. The standard for most photography equipment is a 1/4-20 bolt.
+
+[Why yes, there is an ISO standard for that.](https://www.iso.org/standard/55918.html)
+
+I designed the stand mounting bracket to be two pieces, that clamp over the threaded rods, so that you can release some of the tension and move the solenoid assembly in and out.
+
+The bottom piece has a cut out for a 1/4-20 hex nut, to capture the piece onto the stand's bolt. There are cutouts for M6 hex bolt heads on the bottom, to be able to use hex nuts to tighten down the clamp.
+
+![Stand Bottom Piece Drawing]({{site.baseurl}}/assets/images/standmountbtm.png){:height="80%" width="80%"}{: .align-center}
+
+The top piece just has the two M6 holes and flat faces for the hex nuts to press onto. There are also features to align the two pieces together.
+
+![Stand Assembly]({{site.baseurl}}/assets/images/standmountassembly.png){:height="80%" width="80%"}{: .align-center}
+
+## Adding some counter weight
+
+In order to avoid too much torque on the stand mounting bracket, a counter weight can be added to the opposite end of the threaded rods. 
+
+I might play around with the design of this, possibly adding features to add bolts. A 100% infill on this piece only gets to 260 grams. 
+
+Maybe add another 1/4 inch NPT port to attach a filled plastic water bottle to the counter weight, and have it hang upside down?
+
+## Putting it all together
+
+Here's a render of the full stand assembly and a desk for reference. It is using a standard photography light stand.
+
+![Stand Assembly]({{site.baseurl}}/assets/images/StandWithTable.png){:height="80%" width="80%"}{: .align-center}
