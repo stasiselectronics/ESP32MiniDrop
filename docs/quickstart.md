@@ -20,6 +20,7 @@ sidebar:
  - 3D Printed Fittings
  - M8 Threaded Rods (x2)
  - Nuts & Bolts
+ - 2m 0.25mm2 - 0.5mm2 stranded wire
  - Plastic beverage bottle
  
  
