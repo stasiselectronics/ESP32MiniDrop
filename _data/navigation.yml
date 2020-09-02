@@ -1,4 +1,6 @@
 main:
+  - title: "Quick Start"
+    url: /docs/quick-start/
   - title: "Docs"
     url: /docs/
   - title: "Blog"
