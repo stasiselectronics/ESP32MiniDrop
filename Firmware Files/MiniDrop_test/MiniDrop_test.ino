@@ -1,3 +1,5 @@
+#include <ArduinoJson.h>
+
 #define BTN_PAIR 19
 #define LED_PAIR 21
 #define SHUTTER_CTLO 15
@@ -10,6 +12,11 @@
 #endif
 
 BluetoothSerial SerialBT;
+
+StaticJsonDocument<200> doc;
+//char json[] = "{\"action\":\"camera\",\"delay\":2000,\"size\":2000}";
+char bluetooth_buffer[1024]; // parsing buffer
+unsigned bluetooth_i = 0;
 
 // Structure to hold options for a water droplet
 // Size is how long in ms the solenoid is "on"
@@ -108,6 +115,32 @@ void test_solenoid(){
    play();
 }
 
+void parse_bt(){
+  // Here we will parse out a bluetooth message.
+  // maybe json objects? Yeah json objects seems like a good choice
+  Serial.print(bluetooth_buffer);
+  bluetooth_i=0;
+  // need to get this working
+  char json[] = bluetooth_buffer
+  // Deserialize the JSON document
+  DeserializationError error = deserializeJson(doc, json);
+
+  // Test if parsing succeeds.
+  if (error) {
+    Serial.print(F("deserializeJson() failed: "));
+    Serial.println(error.c_str());
+    return;
+  }
+  // Fetch values.
+  //
+  // Most of the time, you can rely on the implicit casts.
+  // In other case, you can do doc["time"].as<long>();
+  const char* sensor = doc["sensor"];
+  long time = doc["time"];
+  double latitude = doc["data"][0];
+  double longitude = doc["data"][1];
+}
+
 void setup() {
   // Setup GPIO
   pinMode(BTN_PAIR, INPUT);
@@ -118,13 +151,21 @@ void setup() {
   Serial.begin(115200);
   SerialBT.begin("MiniDrop"); //Bluetooth device name
   Serial.println("Initializing MiniDrop");
-  Serial.println("testing playlist");
-  test_solenoid();
+  //Serial.println("testing playlist");
+  //test_solenoid();
 }
 
 void loop() {
   if (SerialBT.available()) {
-    Serial.write(SerialBT.read());
+    char mychar = SerialBT.read();
+    bluetooth_buffer[bluetooth_i]=mychar;
+    bluetooth_i++;
+    Serial.print(mychar);
+    if(mychar==10) // line feed
+    {
+      Serial.println("found message");
+      parse_bt();
+    }
   }
   delay(20);
 }
