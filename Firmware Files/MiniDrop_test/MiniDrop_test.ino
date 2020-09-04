@@ -13,8 +13,9 @@
 
 BluetoothSerial SerialBT;
 
-StaticJsonDocument<200> doc;
-//char json[] = "{\"action\":\"camera\",\"delay\":2000,\"size\":2000}";
+StaticJsonDocument<5096> doc;
+
+char original_json[] = "[{\"type\":\"droplet\",\"size\":100,\"delay\":200},{\"type\":\"droplet\",\"size\":101,\"delay\":201},{\"type\":\"droplet\",\"size\":102,\"delay\":202},{\"type\":\"camera\",\"delay\":203}]";
 char bluetooth_buffer[1024]; // parsing buffer
 unsigned bluetooth_i = 0;
 
@@ -43,14 +44,14 @@ struct action{
 
 // Structure array to hold all of our actions
 // chosing a very high number of elements just for fun
-struct action playlist[1024];
+struct action playlist[5096];
 unsigned playlist_i = 0;
 
 
 void add_action(action myaction){
   playlist[playlist_i]=myaction;
   playlist_i++;
-  if(playlist_i >1024)
+  if(playlist_i >5096)
     playlist_i = 0;
 }
 
@@ -76,6 +77,9 @@ void expose(unsigned delay_ms){
 }
 
 void play(){
+  Serial.println("---------------------------");
+  Serial.println("----------Action!----------");
+  Serial.println("---------------------------");
   for(int i = 0; i < playlist_i;i++){
     Serial.print("Action: ");Serial.println(i);
     Serial.print("Action Type: ");
@@ -118,13 +122,14 @@ void test_solenoid(){
 void parse_bt(){
   // Here we will parse out a bluetooth message.
   // maybe json objects? Yeah json objects seems like a good choice
+  // char test_json[] = "[{\"type\":\"droplet\",\"size\":100,\"delay\":200},{\"type\":\"droplet\",\"size\":101,\"delay\":201},{\"type\":\"droplet\",\"size\":102,\"delay\":202},{\"type\":\"camera\",\"delay\":203}]";
   Serial.print(bluetooth_buffer);
   bluetooth_i=0;
   // need to get this working
-  char json[] = bluetooth_buffer
+  //char json[] = bluetooth_buffer
   // Deserialize the JSON document
-  DeserializationError error = deserializeJson(doc, json);
-
+  DeserializationError error = deserializeJson(doc, bluetooth_buffer);
+  
   // Test if parsing succeeds.
   if (error) {
     Serial.print(F("deserializeJson() failed: "));
@@ -132,13 +137,35 @@ void parse_bt(){
     return;
   }
   // Fetch values.
-  //
-  // Most of the time, you can rely on the implicit casts.
-  // In other case, you can do doc["time"].as<long>();
-  const char* sensor = doc["sensor"];
-  long time = doc["time"];
-  double latitude = doc["data"][0];
-  double longitude = doc["data"][1];
+  // Walk the JsonArray efficiently
+  // Get a reference to the root array
+  JsonArray arr = doc.as<JsonArray>();
+  for (JsonObject action : arr) {
+    String type = action["type"];
+    unsigned delay_ms = action["delay"];
+    unsigned size_ms = action["size"];
+    Serial.println("parsed values");
+    Serial.print("type: "); Serial.println(type);
+    Serial.print("delay: "); Serial.println(delay_ms);
+    Serial.print("size: "); Serial.println(size_ms);
+    struct action myaction;
+    if(type=="droplet"){
+      myaction.type= type_droplet;
+      myaction.droplet.size_ms = size_ms;
+      myaction.droplet.delay_ms = delay_ms;
+      add_action(myaction);
+    }
+    else if(type=="camera"){
+      myaction.type= type_camera;
+      myaction.camera.delay_ms = delay_ms;
+      add_action(myaction);
+    }
+    else {
+      Serial.print("can't determine type: ");Serial.println(type);
+    }
+  }
+  // Now we have finished parsing and adding all actions
+  play();
 }
 
 void setup() {
@@ -160,12 +187,12 @@ void loop() {
     char mychar = SerialBT.read();
     bluetooth_buffer[bluetooth_i]=mychar;
     bluetooth_i++;
-    Serial.print(mychar);
+    //Serial.print(mychar);
     if(mychar==10) // line feed
     {
       Serial.println("found message");
       parse_bt();
     }
   }
-  delay(20);
+  int i = 1 +2; //busy work to keep alive
 }
