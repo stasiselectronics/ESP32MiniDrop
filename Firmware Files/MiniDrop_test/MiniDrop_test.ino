@@ -116,8 +116,8 @@ void parse_bt(){
     String type = action["type"];
     unsigned delay_ms = action["delay"];
     unsigned size_ms = action["size"];
+    String hold_status = action["hold_status"];
     struct action myaction; // action structure to hold all the values
-    
     if(type=="droplet"){
       myaction.type= type_droplet;
       myaction.droplet.size_ms = size_ms;
@@ -129,12 +129,27 @@ void parse_bt(){
       myaction.camera.delay_ms = delay_ms;
       add_action(myaction);
     }
+    else if(type=="hold"){
+      if(hold_status=="on"){
+        // turn on solenoid
+        Serial.println("Keeping Solenoid On");
+        digitalWrite(SOLENOID_CTLO, HIGH);
+      }
+      else if(hold_status=="off"){
+        // turn off solenoid
+        Serial.println("Turning off Solenoid");
+        digitalWrite(SOLENOID_CTLO, LOW);
+      }
+    }
     else {
       Serial.print("can't determine type: ");Serial.println(type);
     }
   }
-  // Now we have finished parsing and adding all actions
-  play(); // execute all the actions that were added
+  if(playlist_i>0){
+    // Now we have finished parsing and adding all actions
+    play(); // execute all the actions that were added 
+  }
+  
 }
 
 void callback(esp_spp_cb_event_t event, esp_spp_cb_param_t *param){
@@ -167,7 +182,8 @@ void setup() {
   pinMode(SOLENOID_CTLO, OUTPUT);
   pinMode(13,OUTPUT);
   SerialBT.register_callback(callback);
-  
+  // Go ahead and turn off the solenoid just in case
+  digitalWrite(SOLENOID_CTLO, LOW);
 }
 
 void loop() {
