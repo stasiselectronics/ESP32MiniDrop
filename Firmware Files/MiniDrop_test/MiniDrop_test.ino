@@ -1,24 +1,24 @@
 #include <ArduinoJson.h>
+#include "BluetoothSerial.h"
 
+// GPIO Definitions
 #define BTN_PAIR 19
 #define LED_PAIR 21
 #define SHUTTER_CTLO 15
 #define FOCUS_CTLO 13
 #define SOLENOID_CTLO 34
-#include "BluetoothSerial.h"
+
 
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
 #error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
 #endif
 
+
 BluetoothSerial SerialBT;
-
 StaticJsonDocument<5096> doc;
-
-char original_json[] = "[{\"type\":\"droplet\",\"size\":100,\"delay\":200},{\"type\":\"droplet\",\"size\":101,\"delay\":201},{\"type\":\"droplet\",\"size\":102,\"delay\":202},{\"type\":\"camera\",\"delay\":203}]";
 char bluetooth_buffer[1024]; // parsing buffer
 unsigned bluetooth_i = 0;
-
+int connected_devices = 0;
 // Structure to hold options for a water droplet
 // Size is how long in ms the solenoid is "on"
 // delay is how long it waits until activating the solenoid in ms
@@ -95,38 +95,10 @@ void play(){
   playlist_i = 0;
 }
 
-void test_solenoid(){
-  // here we will build a playlist to test things out
-   Serial.println("building playlist");
-   action action1 = {.type = type_droplet};
-   action1.droplet.size_ms = 100;
-   action1.droplet.delay_ms = 200;
-   add_action(action1);
-   
-   action action2 = {.type = type_droplet};
-   action2.droplet.size_ms = 101;
-   action2.droplet.delay_ms = 201;
-   add_action(action2);
-   
-   action action3 = {.type = type_droplet};
-   action3.droplet.size_ms = 102;
-   action3.droplet.delay_ms = 202;
-   add_action(action3);
-   
-   action action4 = {.type = type_camera};
-   action4.camera.delay_ms = 300;
-   add_action(action4);
-   play();
-}
-
 void parse_bt(){
   // Here we will parse out a bluetooth message.
-  // maybe json objects? Yeah json objects seems like a good choice
-  // char test_json[] = "[{\"type\":\"droplet\",\"size\":100,\"delay\":200},{\"type\":\"droplet\",\"size\":101,\"delay\":201},{\"type\":\"droplet\",\"size\":102,\"delay\":202},{\"type\":\"camera\",\"delay\":203}]";
-  Serial.print(bluetooth_buffer);
-  bluetooth_i=0;
-  // need to get this working
-  //char json[] = bluetooth_buffer
+  // Serial.print(bluetooth_buffer);
+  bluetooth_i = 0; // reset bluetooth message buffer
   // Deserialize the JSON document
   DeserializationError error = deserializeJson(doc, bluetooth_buffer);
   
@@ -136,19 +108,16 @@ void parse_bt(){
     Serial.println(error.c_str());
     return;
   }
-  // Fetch values.
-  // Walk the JsonArray efficiently
+  
+  // Fetch values
   // Get a reference to the root array
   JsonArray arr = doc.as<JsonArray>();
   for (JsonObject action : arr) {
     String type = action["type"];
     unsigned delay_ms = action["delay"];
     unsigned size_ms = action["size"];
-    Serial.println("parsed values");
-    Serial.print("type: "); Serial.println(type);
-    Serial.print("delay: "); Serial.println(delay_ms);
-    Serial.print("size: "); Serial.println(size_ms);
-    struct action myaction;
+    struct action myaction; // action structure to hold all the values
+    
     if(type=="droplet"){
       myaction.type= type_droplet;
       myaction.droplet.size_ms = size_ms;
@@ -165,21 +134,40 @@ void parse_bt(){
     }
   }
   // Now we have finished parsing and adding all actions
-  play();
+  play(); // execute all the actions that were added
+}
+
+void callback(esp_spp_cb_event_t event, esp_spp_cb_param_t *param){
+// Callback function implementation
+  if(event == ESP_SPP_SRV_OPEN_EVT){
+    Serial.println("Client Connected");
+    connected_devices++;
+    digitalWrite(13,HIGH);
+  }
+  else if(event == ESP_SPP_CLOSE_EVT ){
+    Serial.println("Client disconnected");
+    connected_devices--;
+    if(connected_devices<=0){
+      connected_devices=0;
+      digitalWrite(13,LOW);
+    }
+  }
 }
 
 void setup() {
+  Serial.begin(115200);
+  SerialBT.begin("MiniDrop"); //Bluetooth device name
+  Serial.println("Initializing MiniDrop");
+  
   // Setup GPIO
   pinMode(BTN_PAIR, INPUT);
   pinMode(LED_PAIR, OUTPUT);
   pinMode(SHUTTER_CTLO, OUTPUT);
   pinMode(FOCUS_CTLO, OUTPUT);
   pinMode(SOLENOID_CTLO, OUTPUT);
-  Serial.begin(115200);
-  SerialBT.begin("MiniDrop"); //Bluetooth device name
-  Serial.println("Initializing MiniDrop");
-  //Serial.println("testing playlist");
-  //test_solenoid();
+  pinMode(13,OUTPUT);
+  SerialBT.register_callback(callback);
+  
 }
 
 void loop() {
@@ -190,7 +178,7 @@ void loop() {
     //Serial.print(mychar);
     if(mychar==10) // line feed
     {
-      Serial.println("found message");
+      //Serial.println("found message");
       parse_bt();
     }
   }
