@@ -1273,24 +1273,6 @@ F 5 "4N25-500E" H 8450 7750 50  0001 C CNN "MPN"
 	1    8450 7750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 7050 8950 7050
-Wire Wire Line
-	8950 7050 8950 7150
-Wire Wire Line
-	8950 7150 8750 7150
-Wire Wire Line
-	9250 7150 9050 7150
-Wire Wire Line
-	9050 7850 8750 7850
-Wire Wire Line
-	8750 7750 8850 7750
-Wire Wire Line
-	8850 7050 8750 7050
-Wire Wire Line
-	8850 7050 8850 6950
-Wire Wire Line
-	8850 6950 9250 6950
 Text GLabel 7550 7650 0    50   Input ~ 0
 Shutter_CTLO
 Text GLabel 7550 6950 0    50   Input ~ 0
@@ -1363,11 +1345,6 @@ F 3 "" H 8100 7850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 7850 8150 7850
-Wire Wire Line
-	8850 7050 8850 7750
-Connection ~ 8850 7050
-Wire Wire Line
-	9050 7150 9050 7850
 Text Notes 7100 6550 0    50   ~ 0
 OptoIsolator LED Characteristics\nForward Voltage:     1.2 Volts\nOperating Current: 10 mA
 Wire Notes Line style solid
@@ -1710,4 +1687,21 @@ Wire Notes Line
 	4275 6075 4750 6075
 Text Notes 11300 4450 0    50   ~ 0
 NOTE:\nNeed to test LED current with no\ncurrent limiting resisitor in place.\nExpect to damage some LEDs
+Wire Wire Line
+	9125 7850 9125 7150
+Wire Wire Line
+	8750 7850 9125 7850
+Wire Wire Line
+	9250 6950 9125 6950
+Wire Wire Line
+	9125 6950 9125 7150
+Connection ~ 9125 7150
+Wire Wire Line
+	8750 7150 9125 7150
+Wire Wire Line
+	8750 7050 9250 7050
+Wire Wire Line
+	9250 7150 9250 7750
+Wire Wire Line
+	9250 7750 8750 7750
 $EndSCHEMATC
