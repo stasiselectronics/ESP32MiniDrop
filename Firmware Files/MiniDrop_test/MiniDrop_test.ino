@@ -157,14 +157,14 @@ void callback(esp_spp_cb_event_t event, esp_spp_cb_param_t *param){
   if(event == ESP_SPP_SRV_OPEN_EVT){
     Serial.println("Client Connected");
     connected_devices++;
-    digitalWrite(13,HIGH);
+    digitalWrite(LED_PAIR,HIGH);
   }
   else if(event == ESP_SPP_CLOSE_EVT ){
     Serial.println("Client disconnected");
     connected_devices--;
     if(connected_devices<=0){
       connected_devices=0;
-      digitalWrite(13,LOW);
+      digitalWrite(LED_PAIR,LOW);
     }
   }
 }
