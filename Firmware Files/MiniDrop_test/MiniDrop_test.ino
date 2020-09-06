@@ -1,11 +1,11 @@
-#include <ArduinoJson.h>
+  #include <ArduinoJson.h>
 #include "BluetoothSerial.h"
 
 // GPIO Definitions
 #define BTN_PAIR 19
 #define LED_PAIR 21
-#define SHUTTER_CTLO 15
-#define FOCUS_CTLO 13
+#define SHUTTER_CTLO 13
+#define FOCUS_CTLO 15
 #define SOLENOID_CTLO 34
 
 
@@ -73,6 +73,7 @@ void expose(unsigned delay_ms){
   delay(delay_ms);
   // turn on solenoid
   digitalWrite(SHUTTER_CTLO, HIGH);
+  delay(300);
   digitalWrite(SHUTTER_CTLO, LOW);
 }
 
