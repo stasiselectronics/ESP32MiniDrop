@@ -313,7 +313,7 @@ Connection ~ 950  3500
 Wire Wire Line
 	950  3500 1000 3500
 $Comp
-L Transistor_BJT:S8050 Q?
+L Device:Q_NPN_BEC Q?
 U 1 1 5F512BB3
 P 1725 6025
 AR Path="/5F45F2B5/5F512BB3" Ref="Q?"  Part="1" 
@@ -349,7 +349,7 @@ Wire Wire Line
 Wire Wire Line
 	1825 5825 1825 5775
 $Comp
-L Transistor_BJT:S8050 Q?
+L Device:Q_NPN_BEC Q?
 U 1 1 5F512BC6
 P 1725 6775
 AR Path="/5F45F2B5/5F512BC6" Ref="Q?"  Part="1" 
