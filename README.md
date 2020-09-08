@@ -13,9 +13,10 @@ This repository contains the source files for a DIY Bluetooth connected solenoid
 
 This project is still in its early stages, so this repository should be considered a work in progress. As of now, here is what has been done:
 - Schematic and Board design are completed and are at first revision: A01
-- A01 Boards currently being fabricated/shipped
-- Parts for small initial prototype ordered
-- 3d printed enclosure designed and ready for first print
+- First rounds of iterations on 3D printed parts for enclsosure and solenoid stand
+- Assembled first board revision and beginning electrical testing
+- Updating board design for next revision
+- Test firmware for ESP32 to use Bluetooth serial communication to pass JSON objects for control and configuration
 
 ## Future Goals
 
