@@ -91,7 +91,7 @@ F 5 "SMC Diode Solutions" H 13400 6650 50  0001 C CNN "MF"
 $EndComp
 Text GLabel 12850 7350 0    50   Input ~ 0
 Solenoid_1_CTLO
-Text GLabel 9400 3900 2    50   Input ~ 0
+Text GLabel 9400 3700 2    50   Input ~ 0
 Solenoid_1_CTLO
 $Comp
 L Connector:USB_B_Mini J?
@@ -811,8 +811,6 @@ Wire Wire Line
 	9500 2400 9150 2400
 Wire Wire Line
 	9500 2600 9150 2600
-Wire Wire Line
-	9150 3900 9400 3900
 Text Label 4875 2850 2    50   ~ 0
 USB_TX
 Text Label 4875 2750 2    50   ~ 0
@@ -1704,4 +1702,82 @@ Wire Wire Line
 	9250 7150 9250 7750
 Wire Wire Line
 	9250 7750 8750 7750
+Wire Wire Line
+	9150 3700 9400 3700
+$Comp
+L Connector_Generic:Conn_01x01 M1
+U 1 1 5F5962A4
+P 17475 1250
+F 0 "M1" H 17625 1250 50  0000 C CNN
+F 1 "Conn_01x01" H 17393 1116 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 17475 1250 50  0001 C CNN
+F 3 "~" H 17475 1250 50  0001 C CNN
+	1    17475 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 M2
+U 1 1 5F5A0DC7
+P 17475 1375
+F 0 "M2" H 17625 1375 50  0000 C CNN
+F 1 "Conn_01x01" H 17393 1241 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 17475 1375 50  0001 C CNN
+F 3 "~" H 17475 1375 50  0001 C CNN
+	1    17475 1375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 M3
+U 1 1 5F5A10F3
+P 17475 1500
+F 0 "M3" H 17625 1500 50  0000 C CNN
+F 1 "Conn_01x01" H 17393 1366 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 17475 1500 50  0001 C CNN
+F 3 "~" H 17475 1500 50  0001 C CNN
+	1    17475 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 M4
+U 1 1 5F5A143F
+P 17475 1625
+F 0 "M4" H 17625 1625 50  0000 C CNN
+F 1 "Conn_01x01" H 17393 1491 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 17475 1625 50  0001 C CNN
+F 3 "~" H 17475 1625 50  0001 C CNN
+	1    17475 1625
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F5AAE85
+P 17750 1700
+F 0 "#PWR0102" H 17750 1450 50  0001 C CNN
+F 1 "GND" H 17755 1527 50  0000 C CNN
+F 2 "" H 17750 1700 50  0001 C CNN
+F 3 "" H 17750 1700 50  0001 C CNN
+	1    17750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17675 1250 17750 1250
+Wire Wire Line
+	17750 1250 17750 1375
+Wire Wire Line
+	17675 1375 17750 1375
+Connection ~ 17750 1375
+Wire Wire Line
+	17750 1375 17750 1500
+Wire Wire Line
+	17675 1500 17750 1500
+Connection ~ 17750 1500
+Wire Wire Line
+	17750 1500 17750 1625
+Wire Wire Line
+	17675 1625 17750 1625
+Connection ~ 17750 1625
+Wire Wire Line
+	17750 1625 17750 1700
+Text Notes 17000 1025 0    100  ~ 20
+Mounting Holes
 $EndSCHEMATC
