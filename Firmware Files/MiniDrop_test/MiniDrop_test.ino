@@ -6,7 +6,7 @@
 #define LED_PAIR 21
 #define SHUTTER_CTLO 13
 #define FOCUS_CTLO 15
-#define SOLENOID_CTLO 34
+#define SOLENOID_CTLO 32
 
 
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
