@@ -34,3 +34,14 @@ docs:
           url: /docs/enclosure/3d-printing/
         - title: "Assembly"
           url: /docs/enclosure/assembly/
+          
+    - title: Stand
+      children:
+        - title: "Drawings"
+          url: /docs/stand/drawings/
+        - title: "3D printing"
+          url: /docs/stand/3d-printing/
+        - title: "Components"
+          url: /docs/stand/components/
+        - title: "Assembly"
+          url: /docs/stand/assembly/
