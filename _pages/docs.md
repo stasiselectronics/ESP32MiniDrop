@@ -21,6 +21,11 @@ For all the latest updates on the source files, make sure to check out the [gith
 - [Drawings]({{site.baseurl}}/docs/enclosure/drawings/)
 - [3D Printing]({{site.baseurl}}/docs/enclosure/3d-printing/)
 - [Assembly]({{site.baseurl}}/docs/enclosure/assembly/)
+<h2>Solenoid Stand</h2>
+- [Drawings]({{site.baseurl}}/docs/stand/drawings/)
+- [3D Printing]({{site.baseurl}}/docs/stand/3d-printing/)
+- [Components]({{site.baseurl}}/docs/stand/components/)
+- [Assembly]({{site.baseurl}}/docs/stand/assembly/)
 <h2>Firmware</h2>
 Still working on the firmware, be sure to check back later for updates!
 <h2>Mobile App</h2>
