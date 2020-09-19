@@ -801,8 +801,6 @@ Wire Wire Line
 	8550 1400 8550 1500
 Text Label 9500 1700 2    50   ~ 0
 IO0
-Wire Wire Line
-	9500 1700 9150 1700
 Text Label 2225 3050 0    50   ~ 0
 D+
 Text Label 2225 3150 0    50   ~ 0
@@ -1224,7 +1222,7 @@ Wire Wire Line
 Connection ~ 3700 10000
 Wire Wire Line
 	3700 10000 4450 10000
-Text Notes 1300 8900 0    50   ~ 0
+Text Notes 1075 8600 0    50   ~ 0
 Drop Out Voltage: 1.3V@800mA\nUSB rectified voltage: 4.65V
 $Comp
 L Isolator:4N25 U?
@@ -1762,4 +1760,32 @@ Wire Wire Line
 	17750 1625 17750 1700
 Text Notes 17000 1025 0    100  ~ 20
 Mounting Holes
+Wire Notes Line rgb(0, 132, 0)
+	525  525  5175 525 
+Wire Notes Line rgb(0, 132, 0)
+	5175 525  5175 5425
+Wire Notes Line rgb(0, 132, 0)
+	5175 5425 525  5425
+Wire Notes Line rgb(0, 132, 0)
+	525  5425 525  525 
+Text Notes 4700 750  0    118  ~ 24
+DNP
+Wire Notes Line
+	2175 5650 2175 7150
+Wire Notes Line
+	2175 7150 850  7150
+Wire Notes Line
+	850  7150 850  5650
+Wire Notes Line
+	850  5650 2175 5650
+Wire Notes Line
+	2800 9250 2800 8850
+Wire Notes Line
+	2800 8850 2175 8850
+Wire Notes Line
+	2175 8850 2175 9250
+Wire Notes Line
+	2175 9250 2800 9250
+Wire Wire Line
+	9500 1700 9150 1700
 $EndSCHEMATC
