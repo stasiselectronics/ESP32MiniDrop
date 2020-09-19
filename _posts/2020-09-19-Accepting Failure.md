@@ -23,3 +23,6 @@ The pros of the feature boil down to an easier time reprogramming the device, bu
 
 I think this is a good reminder to focus on the primary functions of a product, and to not burden the cost of a PCB with features that are not used often if not at all.
 
+## Some other minor fixes
+
+I also found a few issues that attention: the solenoid MOSFET needs to have its pin mapping fixed, and the shutter control pin needs to be moved to another pin. The pin that is currently used for the shutter control is also used to disable the verbose output on the UART0 port. I might want to set this to be no output. 
