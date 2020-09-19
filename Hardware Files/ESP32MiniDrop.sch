@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Q_NMOS_DGS Q3
+L Device:Q_NMOS_GDS Q3
 U 1 1 5F4F858B
 P 13300 7350
 AR Path="/5F4F858B" Ref="Q3"  Part="1" 
@@ -1633,18 +1633,6 @@ Wire Notes Line
 	13250 1175 13250 1800
 Wire Notes Line
 	13250 1800 13300 1800
-Wire Notes Line
-	13125 2445 13125 2495
-Wire Notes Line
-	13125 2495 13175 2495
-Text Notes 13175 2525 0    50   ~ 0
-USB to UART
-Text Notes 13275 2875 0    50   ~ 0
-Testing USB to UART chip as found on ESP32 Dev Kit to allow for\nautomatic programing with the Arduino IDE. If that fails, back up\nprogramming header can be used, with jumpers to implement\nboot selection
-Wire Notes Line
-	13250 2575 13250 2900
-Wire Notes Line
-	13250 2900 13300 2900
 Text Notes 575  5150 0    39   ~ 0
 A resistor divider (or functionally-equivalent circuit) on VBUS\nis required to reduce input voltage below maximimum. \nIn this case, the current limitation of the resistor divider \nprevents high VBUS pin leakage current, even \nthough the VIO + 2.5 V specification is not strictly met while\nthe device is not powered.
 Text Notes 6550 4600 0    50   ~ 0
@@ -1675,12 +1663,6 @@ Wire Notes Line style solid
 	7000 4500 7450 4500
 Text Notes 3950 9650 0    50   ~ 0
 1A Max
-Text Notes 13100 3150 0    100  ~ 20
-ERRATA
-Text Notes 13175 3275 0    50   ~ 0
-REV A01
-Text Notes 13275 3375 0    50   ~ 0
-D7 must be mounted in reverse. Fixed in Rev A02.
 Wire Notes Line
 	4275 6075 4750 6075
 Text Notes 11300 4450 0    50   ~ 0
