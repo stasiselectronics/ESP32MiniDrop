@@ -1090,7 +1090,11 @@ U 1 1 5F8144D0
 P 1575 9650
 F 0 "J5" H 1632 9967 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1632 9876 50  0000 C CNN
+<<<<<<< HEAD
 F 2 "ESP32MiniDrop_PCB_Library:BarrelJack_Wuerth_6941xx301002_3D" H 1625 9610 50  0001 C CNN
+=======
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 1625 9610 50  0001 C CNN
+>>>>>>> 61bfd5bfe77a5b7cef52b9253184fb57a6f37299
 F 3 "~" H 1625 9610 50  0001 C CNN
 	1    1575 9650
 	1    0    0    -1  
