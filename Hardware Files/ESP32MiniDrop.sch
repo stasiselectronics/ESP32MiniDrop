@@ -95,40 +95,6 @@ Text GLabel 4025 3875 2    50   Input ~ 0
 Solenoid_1_CTLO
 $Comp
 L Device:R R?
-U 1 1 5F512BE2
-P 7675 2050
-AR Path="/5F45F2B5/5F512BE2" Ref="R?"  Part="1" 
-AR Path="/5F512BE2" Ref="R6"  Part="1" 
-F 0 "R6" H 7745 2096 50  0000 L CNN
-F 1 "10k 1% 0.1W" H 7745 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7605 2050 50  0001 C CNN
-F 3 "~" H 7675 2050 50  0001 C CNN
-F 4 "Yageo" H 7675 2050 50  0001 C CNN "MF"
-F 5 "" H 7675 2050 50  0001 C CNN "MPN"
-	1    7675 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7675 2200 7675 2400
-Text Label 7725 2400 0    50   ~ 0
-IO0
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F512BEA
-P 7675 1750
-AR Path="/5F45F2B5/5F512BEA" Ref="#PWR?"  Part="1" 
-AR Path="/5F512BEA" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 7675 1600 50  0001 C CNN
-F 1 "+3.3V" H 7690 1923 50  0000 C CNN
-F 2 "" H 7675 1750 50  0001 C CNN
-F 3 "" H 7675 1750 50  0001 C CNN
-	1    7675 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7675 1750 7675 1900
-$Comp
-L Device:R R?
 U 1 1 5F512BF3
 P 8425 2075
 AR Path="/5F45F2B5/5F512BF3" Ref="R?"  Part="1" 
@@ -367,8 +333,6 @@ Wire Wire Line
 	2950 9625 2950 9550
 Wire Wire Line
 	2950 9925 2950 10000
-Wire Wire Line
-	7675 2400 7875 2400
 Text Notes 3475 9075 0    50   ~ 0
 Regulator for both 12V and 5V\ninput sources
 Text Notes 8350 1450 0    50   ~ 0
@@ -444,8 +408,6 @@ Text Label 4125 1875 2    50   ~ 0
 IO0
 Wire Wire Line
 	4125 2575 3775 2575
-Wire Wire Line
-	4125 2775 3775 2775
 Wire Wire Line
 	8425 2425 9175 2425
 $Comp
@@ -891,7 +853,7 @@ Wire Wire Line
 Wire Wire Line
 	1275 4075 1275 3975
 Connection ~ 1275 3975
-Text GLabel 4125 2775 2    50   Input ~ 0
+Text GLabel 4150 2075 2    50   Input ~ 0
 Shutter_CTLO
 Text GLabel 4125 2575 2    50   Input ~ 0
 Focus_CTLO
@@ -1138,4 +1100,50 @@ Wire Wire Line
 	5875 3725 7225 3725
 Wire Wire Line
 	5875 4225 6800 4225
+$Comp
+L Device:R R?
+U 1 1 5F72D7F7
+P 8800 4750
+AR Path="/5F45F2B5/5F72D7F7" Ref="R?"  Part="1" 
+AR Path="/5F72D7F7" Ref="R1"  Part="1" 
+F 0 "R1" H 8870 4796 50  0000 L CNN
+F 1 "10k 1% 0.1W" H 8870 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8730 4750 50  0001 C CNN
+F 3 "~" H 8800 4750 50  0001 C CNN
+F 4 "Yageo" H 8800 4750 50  0001 C CNN "MF"
+F 5 "" H 8800 4750 50  0001 C CNN "MPN"
+	1    8800 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4125 2775 2    50   Input ~ 0
+U0TX_Active
+Wire Wire Line
+	4150 2075 3775 2075
+Wire Wire Line
+	4125 2775 3775 2775
+Text GLabel 8675 4500 0    50   Input ~ 0
+U0TX_Active
+Wire Wire Line
+	8675 4500 8800 4500
+Wire Wire Line
+	8800 4500 8800 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5F750570
+P 8800 5025
+AR Path="/5F45F2B5/5F750570" Ref="#PWR?"  Part="1" 
+AR Path="/5F750570" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 8800 4775 50  0001 C CNN
+F 1 "GND" H 8805 4852 50  0000 C CNN
+F 2 "" H 8800 5025 50  0001 C CNN
+F 3 "" H 8800 5025 50  0001 C CNN
+	1    8800 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4900 8800 5025
+Text Notes 9125 4425 0    50   ~ 0
+MTDO Pin has internal pull up\nU0TX Active : 0\nU0TX Disabled: 1
+Text Label 5825 2425 0    50   ~ 0
+IO0
 $EndSCHEMATC
