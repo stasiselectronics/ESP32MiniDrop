@@ -340,41 +340,6 @@ Boot Mode Selection
 Text Notes 9225 1975 0    50   ~ 0
 User Reset
 $Comp
-L Connector:Barrel_Jack J?
-U 1 1 5F512CA7
-P 1550 9650
-AR Path="/5F45F2B5/5F512CA7" Ref="J?"  Part="1" 
-AR Path="/5F512CA7" Ref="J4"  Part="1" 
-F 0 "J4" H 1320 9700 50  0000 R CNN
-F 1 "Barrel_Jack" H 1320 9609 50  0000 R CNN
-F 2 "ESP32MiniDrop_PCB_Library:PJ-037A" H 1600 9610 50  0001 C CNN
-F 3 "" H 1600 9610 50  0001 C CNN
-F 4 "CUI Devices" H 1550 9650 50  0001 C CNN "MF"
-F 5 "PJ-037A" H 1550 9650 50  0001 C CNN "MPN"
-	1    1550 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 9750 1950 9750
-Wire Wire Line
-	1950 9750 1950 9850
-$Comp
-L power:GND #PWR?
-U 1 1 5F512CAF
-P 1950 9850
-AR Path="/5F45F2B5/5F512CAF" Ref="#PWR?"  Part="1" 
-AR Path="/5F512CAF" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 1950 9600 50  0001 C CNN
-F 1 "GND" H 1955 9677 50  0000 C CNN
-F 2 "" H 1950 9850 50  0001 C CNN
-F 3 "" H 1950 9850 50  0001 C CNN
-	1    1950 9850
-	-1   0    0    -1  
-$EndComp
-Connection ~ 2200 9550
-Wire Wire Line
-	1850 9550 2200 9550
-$Comp
 L Device:C C?
 U 1 1 5F512CC9
 P 1225 2650
@@ -446,8 +411,8 @@ U 1 1 5F512D48
 P 5725 2125
 AR Path="/5F45F2B5/5F512D48" Ref="R?"  Part="1" 
 AR Path="/5F512D48" Ref="R2"  Part="1" 
-F 0 "R2" H 5500 2175 50  0000 L CNN
-F 1 "10k 5% 0.25W" H 5175 2100 50  0000 L CNN
+F 0 "R2" H 5550 2200 50  0000 L CNN
+F 1 "10k 5% 0.25W" H 5100 2125 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5655 2125 50  0001 C CNN
 F 3 "~" H 5725 2125 50  0001 C CNN
 F 4 "Yageo" H 5725 2125 50  0001 C CNN "MF"
@@ -638,49 +603,19 @@ Connection ~ 3700 10000
 Text Notes 1075 8600 0    50   ~ 0
 Drop Out Voltage: 1.3V@800mA\nUSB rectified voltage: 4.65V
 $Comp
-L Isolator:4N25 U?
-U 1 1 5F5C6C58
-P 2375 6725
-AR Path="/5F5BF78E/5F5C6C58" Ref="U?"  Part="1" 
-AR Path="/5F5C6C58" Ref="U2"  Part="1" 
-F 0 "U2" H 2375 7050 50  0000 C CNN
-F 1 "4N25" H 2375 6959 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W8.89mm_SMDSocket_LongPads" H 2175 6525 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 2375 6725 50  0001 L CNN
-F 4 "Broadcom Limited" H 2375 6725 50  0001 C CNN "MF"
-F 5 "4N25-500E" H 2375 6725 50  0001 C CNN "MPN"
-	1    2375 6725
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:AudioJack3 J?
 U 1 1 5F5C6C60
-P 3375 6725
+P 3550 6925
 AR Path="/5F5BF78E/5F5C6C60" Ref="J?"  Part="1" 
 AR Path="/5F5C6C60" Ref="J3"  Part="1" 
-F 0 "J3" H 3095 6750 50  0000 R CNN
-F 1 "AudioJack3" H 3095 6659 50  0000 R CNN
-F 2 "ESP32MiniDrop_PCB_Library:STX-3000" H 3375 6725 50  0001 C CNN
-F 3 "~" H 3375 6725 50  0001 C CNN
-F 4 "Kycon, Inc." H 3375 6725 50  0001 C CNN "MF"
-F 5 "STX-3000" H 3375 6725 50  0001 C CNN "MPN"
-	1    3375 6725
+F 0 "J3" H 3270 6950 50  0000 R CNN
+F 1 "AudioJack3" H 3270 6859 50  0000 R CNN
+F 2 "ESP32MiniDrop_PCB_Library:STX-3000" H 3550 6925 50  0001 C CNN
+F 3 "~" H 3550 6925 50  0001 C CNN
+F 4 "Kycon, Inc." H 3550 6925 50  0001 C CNN "MF"
+F 5 "STX-3000" H 3550 6925 50  0001 C CNN "MPN"
+	1    3550 6925
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Isolator:4N25 U?
-U 1 1 5F5C6C68
-P 2375 7425
-AR Path="/5F5BF78E/5F5C6C68" Ref="U?"  Part="1" 
-AR Path="/5F5C6C68" Ref="U3"  Part="1" 
-F 0 "U3" H 2375 7750 50  0000 C CNN
-F 1 "4N25" H 2375 7659 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W8.89mm_SMDSocket_LongPads" H 2175 7225 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 2375 7425 50  0001 L CNN
-F 4 "Broadcom Limited" H 2375 7425 50  0001 C CNN "MF"
-F 5 "4N25-500E" H 2375 7425 50  0001 C CNN "MPN"
-	1    2375 7425
-	1    0    0    -1  
 $EndComp
 Text GLabel 1475 7325 0    50   Input ~ 0
 Shutter_CTLO
@@ -702,8 +637,6 @@ F 5 "RC1206JR-07220RL" H 1775 6625 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1925 6625 2075 6625
-Wire Wire Line
 	1475 6625 1625 6625
 $Comp
 L Device:R R?
@@ -722,8 +655,6 @@ F 5 "RC1206JR-07220RL" H 1775 7325 50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	1475 7325 1625 7325
-Wire Wire Line
-	1925 7325 2075 7325
 $Comp
 L power:GND #PWR?
 U 1 1 5F5C6C8D
@@ -737,8 +668,6 @@ F 3 "" H 2025 6825 50  0001 C CNN
 	1    2025 6825
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2025 6825 2075 6825
 $Comp
 L power:GND #PWR?
 U 1 1 5F5C6C94
@@ -752,8 +681,6 @@ F 3 "" H 2025 7525 50  0001 C CNN
 	1    2025 7525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2025 7525 2075 7525
 Text Notes 1025 6225 0    50   ~ 0
 OptoIsolator LED Characteristics\nForward Voltage:     1.2 Volts\nOperating Current: 10 mA
 Wire Notes Line style solid
@@ -975,23 +902,6 @@ Text Notes 3950 9650 0    50   ~ 0
 Wire Notes Line
 	9200 1975 9675 1975
 Wire Wire Line
-	3050 7525 3050 6825
-Wire Wire Line
-	2675 7525 3050 7525
-Wire Wire Line
-	3175 6625 3050 6625
-Wire Wire Line
-	3050 6625 3050 6825
-Connection ~ 3050 6825
-Wire Wire Line
-	2675 6825 3050 6825
-Wire Wire Line
-	2675 6725 3175 6725
-Wire Wire Line
-	3175 6825 3175 7425
-Wire Wire Line
-	3175 7425 2675 7425
-Wire Wire Line
 	3775 3875 4025 3875
 $Comp
 L Connector_Generic:Conn_01x01 M1
@@ -1123,4 +1033,91 @@ Text Label 5825 2425 0    50   ~ 0
 IO0
 Wire Wire Line
 	3700 10000 3700 10100
+$Comp
+L Isolator:LTV-827S U2
+U 2 1 5F7A6142
+P 2500 7425
+F 0 "U2" H 2500 7750 50  0000 C CNN
+F 1 "LTV-827S" H 2500 7659 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-8_W9.53mm" H 2500 7125 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 1700 7975 50  0001 C CNN
+	2    2500 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-827S U2
+U 1 1 5F7A5EFB
+P 2500 6725
+F 0 "U2" H 2500 7050 50  0000 C CNN
+F 1 "LTV-827S" H 2500 6959 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-8_W9.53mm" H 2500 6425 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 1700 7275 50  0001 C CNN
+	1    2500 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6825 3100 6825
+Connection ~ 3100 6825
+Wire Wire Line
+	3100 6825 3350 6825
+Wire Wire Line
+	2800 6625 2900 6625
+Wire Wire Line
+	2900 6625 2900 6925
+Wire Wire Line
+	2900 6925 3350 6925
+Wire Wire Line
+	2900 7025 3350 7025
+Wire Wire Line
+	1925 7325 2200 7325
+Wire Wire Line
+	2025 7525 2200 7525
+Wire Wire Line
+	1925 6625 2200 6625
+Wire Wire Line
+	2025 6825 2200 6825
+Wire Wire Line
+	2800 7325 2900 7325
+Wire Wire Line
+	2900 7025 2900 7325
+Wire Wire Line
+	2800 7525 3100 7525
+Wire Wire Line
+	3100 6825 3100 7525
+$Comp
+L Connector:Barrel_Jack_Switch J5
+U 1 1 5F8144D0
+P 1575 9650
+F 0 "J5" H 1632 9967 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1632 9876 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 1625 9610 50  0001 C CNN
+F 3 "~" H 1625 9610 50  0001 C CNN
+	1    1575 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F815BAF
+P 1975 9850
+AR Path="/5F45F2B5/5F815BAF" Ref="#PWR?"  Part="1" 
+AR Path="/5F815BAF" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 1975 9600 50  0001 C CNN
+F 1 "GND" H 1980 9677 50  0000 C CNN
+F 2 "" H 1975 9850 50  0001 C CNN
+F 3 "" H 1975 9850 50  0001 C CNN
+	1    1975 9850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 9650 1975 9650
+Wire Wire Line
+	1975 9650 1975 9750
+Wire Wire Line
+	1875 9750 1975 9750
+Connection ~ 1975 9750
+Wire Wire Line
+	1975 9750 1975 9850
+Wire Wire Line
+	1875 9550 2200 9550
+Connection ~ 2200 9550
 $EndSCHEMATC
