@@ -51,10 +51,10 @@ AR Path="/5F4F85A1" Ref="R16"  Part="1"
 AR Path="/5F45E76E/5F4F85A1" Ref="R?"  Part="1" 
 F 0 "R16" V 5718 7250 50  0000 C CNN
 F 1 "10k 1% 0.1W" V 5809 7250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5855 7250 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5855 7250 50  0001 C CNN
 F 3 "~" H 5925 7250 50  0001 C CNN
 F 4 "Yageo" H 5925 7250 50  0001 C CNN "MF"
-F 5 "RC0603FR-0710KL" H 5925 7250 50  0001 C CNN "MPN"
+F 5 "" H 5925 7250 50  0001 C CNN "MPN"
 	1    5925 7250
 	1    0    0    1   
 $EndComp
@@ -101,10 +101,10 @@ AR Path="/5F45F2B5/5F512BE2" Ref="R?"  Part="1"
 AR Path="/5F512BE2" Ref="R6"  Part="1" 
 F 0 "R6" H 7745 2096 50  0000 L CNN
 F 1 "10k 1% 0.1W" H 7745 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7605 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7605 2050 50  0001 C CNN
 F 3 "~" H 7675 2050 50  0001 C CNN
 F 4 "Yageo" H 7675 2050 50  0001 C CNN "MF"
-F 5 "RC0603FR-0710KL" H 7675 2050 50  0001 C CNN "MPN"
+F 5 "" H 7675 2050 50  0001 C CNN "MPN"
 	1    7675 2050
 	1    0    0    -1  
 $EndComp
@@ -135,10 +135,10 @@ AR Path="/5F45F2B5/5F512BF3" Ref="R?"  Part="1"
 AR Path="/5F512BF3" Ref="R7"  Part="1" 
 F 0 "R7" H 8495 2121 50  0000 L CNN
 F 1 "10k 1% 0.1W" H 8495 2030 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8355 2075 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8355 2075 50  0001 C CNN
 F 3 "~" H 8425 2075 50  0001 C CNN
 F 4 "Yageo" H 8425 2075 50  0001 C CNN "MF"
-F 5 "RC0603FR-0710KL" H 8425 2075 50  0001 C CNN "MPN"
+F 5 "" H 8425 2075 50  0001 C CNN "MPN"
 	1    8425 2075
 	1    0    0    -1  
 $EndComp
@@ -169,10 +169,10 @@ AR Path="/5F45F2B5/5F512C25" Ref="C?"  Part="1"
 AR Path="/5F512C25" Ref="C8"  Part="1" 
 F 0 "C8" H 1940 2696 50  0000 L CNN
 F 1 "1uF 50V" H 1940 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1863 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1863 2500 50  0001 C CNN
 F 3 "~" H 1825 2650 50  0001 C CNN
-F 4 "Yageo" H 1825 2650 50  0001 C CNN "MF"
-F 5 "CC0603KRX5R9BB105" H 1825 2650 50  0001 C CNN "MPN"
+F 4 "" H 1825 2650 50  0001 C CNN "MF"
+F 5 "" H 1825 2650 50  0001 C CNN "MPN"
 	1    1825 2650
 	1    0    0    -1  
 $EndComp
@@ -287,10 +287,10 @@ AR Path="/5F45F2B5/5F512C64" Ref="C?"  Part="1"
 AR Path="/5F512C64" Ref="C4"  Part="1" 
 F 0 "C4" V 9575 2625 50  0000 C CNN
 F 1 "1nF 50V" V 9675 2625 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9463 2475 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9463 2475 50  0001 C CNN
 F 3 "~" H 9425 2625 50  0001 C CNN
-F 4 "Yageo" V 9425 2625 50  0001 C CNN "MF"
-F 5 "CC0603KRX7R9BB102" V 9425 2625 50  0001 C CNN "MPN"
+F 4 "" V 9425 2625 50  0001 C CNN "MF"
+F 5 "" V 9425 2625 50  0001 C CNN "MPN"
 	1    9425 2625
 	0    1    1    0   
 $EndComp
@@ -471,10 +471,10 @@ AR Path="/5F45F2B5/5F512D40" Ref="C?"  Part="1"
 AR Path="/5F512D40" Ref="C6"  Part="1" 
 F 0 "C6" V 6475 2675 50  0000 C CNN
 F 1 "1nF 50V" V 6575 2675 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6363 2525 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6363 2525 50  0001 C CNN
 F 3 "~" H 6325 2675 50  0001 C CNN
-F 4 "Yageo" V 6325 2675 50  0001 C CNN "MF"
-F 5 "CC0603KRX7R9BB102" V 6325 2675 50  0001 C CNN "MPN"
+F 4 "" V 6325 2675 50  0001 C CNN "MF"
+F 5 "" V 6325 2675 50  0001 C CNN "MPN"
 	1    6325 2675
 	0    1    1    0   
 $EndComp
@@ -486,10 +486,10 @@ AR Path="/5F45F2B5/5F512D48" Ref="R?"  Part="1"
 AR Path="/5F512D48" Ref="R13"  Part="1" 
 F 0 "R13" H 5500 2175 50  0000 L CNN
 F 1 "10k 1% 0.1W" H 5175 2100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5655 2125 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5655 2125 50  0001 C CNN
 F 3 "~" H 5725 2125 50  0001 C CNN
 F 4 "Yageo" H 5725 2125 50  0001 C CNN "MF"
-F 5 "RC0603FR-0710KL" H 5725 2125 50  0001 C CNN "MPN"
+F 5 "" H 5725 2125 50  0001 C CNN "MPN"
 	1    5725 2125
 	1    0    0    -1  
 $EndComp
@@ -570,8 +570,6 @@ F 5 "150120GS75000" H 5725 3725 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6325 3725 5875 3725
-Wire Wire Line
 	5575 3725 5275 3725
 Wire Wire Line
 	5275 3725 5275 4225
@@ -623,8 +621,6 @@ F 5 "ESP32-WROOM-32D" H 3175 3075 50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	3775 3175 4075 3175
-Wire Wire Line
-	5875 4225 6325 4225
 $Comp
 L Regulator_Linear:AZ1117-3.3 U?
 U 1 1 5F512DAE
@@ -669,10 +665,10 @@ AR Path="/5F45F2B5/5F512DC0" Ref="C?"  Part="1"
 AR Path="/5F512DC0" Ref="C9"  Part="1" 
 F 0 "C9" H 4565 9821 50  0000 L CNN
 F 1 "22uF 6.3V" H 4565 9730 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4488 9625 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4488 9625 50  0001 C CNN
 F 3 "~" H 4450 9775 50  0001 C CNN
-F 4 "Samsung Electro-Mechanics" H 4450 9775 50  0001 C CNN "MF"
-F 5 "CL21A226MQQNNNE" H 4450 9775 50  0001 C CNN "MPN"
+F 4 "" H 4450 9775 50  0001 C CNN "MF"
+F 5 "" H 4450 9775 50  0001 C CNN "MPN"
 	1    4450 9775
 	1    0    0    -1  
 $EndComp
@@ -761,10 +757,10 @@ AR Path="/5F5BF78E/5F5C6C7B" Ref="R?"  Part="1"
 AR Path="/5F5C6C7B" Ref="R14"  Part="1" 
 F 0 "R14" V 1568 6625 50  0000 C CNN
 F 1 "220R 1% 0.1W" V 1659 6625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1705 6625 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1705 6625 50  0001 C CNN
 F 3 "~" H 1775 6625 50  0001 C CNN
 F 4 "Yageo" H 1775 6625 50  0001 C CNN "MF"
-F 5 "RC0603FR-07220RL" H 1775 6625 50  0001 C CNN "MPN"
+F 5 "" H 1775 6625 50  0001 C CNN "MPN"
 	1    1775 6625
 	0    1    1    0   
 $EndComp
@@ -780,10 +776,10 @@ AR Path="/5F5BF78E/5F5C6C85" Ref="R?"  Part="1"
 AR Path="/5F5C6C85" Ref="R15"  Part="1" 
 F 0 "R15" V 1568 7325 50  0000 C CNN
 F 1 "220R 1% 0.1W" V 1659 7325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1705 7325 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1705 7325 50  0001 C CNN
 F 3 "~" H 1775 7325 50  0001 C CNN
 F 4 "Yageo" H 1775 7325 50  0001 C CNN "MF"
-F 5 "RC0603FR-07220RL" H 1775 7325 50  0001 C CNN "MPN"
+F 5 "" H 1775 7325 50  0001 C CNN "MPN"
 	1    1775 7325
 	0    1    1    0   
 $EndComp
@@ -831,36 +827,6 @@ Wire Notes Line style solid
 	2325 6275 2325 5925
 Wire Notes Line style solid
 	2325 5925 975  5925
-$Comp
-L Device:R R?
-U 1 1 5F65878C
-P 6475 3725
-AR Path="/5F45F2B5/5F65878C" Ref="R?"  Part="1" 
-AR Path="/5F65878C" Ref="R11"  Part="1" 
-F 0 "R11" V 6275 3775 50  0000 R CNN
-F 1 "0R 0.1W" V 6375 3875 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6405 3725 50  0001 C CNN
-F 3 "~" H 6475 3725 50  0001 C CNN
-F 4 "Yageo" H 6475 3725 50  0001 C CNN "MF"
-F 5 "311-0.0GRCT-ND" H 6475 3725 50  0001 C CNN "MPN"
-	1    6475 3725
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F6593F1
-P 6475 4225
-AR Path="/5F45F2B5/5F6593F1" Ref="R?"  Part="1" 
-AR Path="/5F6593F1" Ref="R12"  Part="1" 
-F 0 "R12" V 6275 4275 50  0000 R CNN
-F 1 "0R 0.1W" V 6375 4375 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6405 4225 50  0001 C CNN
-F 3 "~" H 6475 4225 50  0001 C CNN
-F 4 "Yageo" H 6475 4225 50  0001 C CNN "MF"
-F 5 "311-0.0GRCT-ND" H 6475 4225 50  0001 C CNN "MPN"
-	1    6475 4225
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J5
 U 1 1 5F42EF88
@@ -935,8 +901,6 @@ Text Notes 1125 2050 0    50   ~ 0
 U3 Bypass Capacitors
 Wire Notes Line
 	1100 2050 2000 2050
-Wire Wire Line
-	6625 3725 7225 3725
 Wire Wire Line
 	7225 3575 7225 3725
 Text Notes 6025 3275 0    50   ~ 0
@@ -1015,8 +979,6 @@ Wire Notes Line width 14 style solid
 	13000 4800 13000 600 
 Text GLabel 6800 4225 2    50   Input ~ 0
 PairLED_CTLO
-Wire Wire Line
-	6625 4225 6800 4225
 Text Notes 13075 875  0    100  ~ 20
 NOTES
 Wire Notes Line
@@ -1075,8 +1037,6 @@ Text Notes 3950 9650 0    50   ~ 0
 1A Max
 Wire Notes Line
 	9200 1975 9675 1975
-Text Notes 5925 4625 0    50   ~ 0
-NOTE:\nNeed to test LED current with no\ncurrent limiting resisitor in place.\nExpect to damage some LEDs
 Wire Wire Line
 	3050 7525 3050 6825
 Wire Wire Line
@@ -1174,4 +1134,8 @@ Text Notes 17000 1025 0    100  ~ 20
 Mounting Holes
 Wire Wire Line
 	4125 1875 3775 1875
+Wire Wire Line
+	5875 3725 7225 3725
+Wire Wire Line
+	5875 4225 6800 4225
 $EndSCHEMATC
