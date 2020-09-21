@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Libraries)(type KiCad)(uri ${KIPRJMOD}/Libraries.pretty)(options "")(descr ""))
+  (lib (name ESP32MiniDrop)(type KiCad)(uri ${KIPRJMOD}/Libraries/ESP32MiniDrop_PCB_Library.pretty)(options "")(descr ""))
 )
