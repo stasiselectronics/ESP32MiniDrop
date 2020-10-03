@@ -1,8 +1,7 @@
 ---
 permalink: /docs/
 title: "Documentation"
-author_profile: false
-classes: wide
+author_profile: true
 layout: single
 ---
 Looking for a jump start to getting up and shooting? Check out the [quick start guide]({{site.baseurl}}/docs/quick-start/).

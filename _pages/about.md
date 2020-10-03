@@ -1,8 +1,20 @@
 ---
 permalink: /about/
-title: "About"
+title: "Why MiniDrop?"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+This device is designed to help make water drop photography easy and accessible. Most controllers for this style of photography can be over priced or over complicated. MiniDrop brings a low cost, simple solution for great water drop photography.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+# What is Water Drop Photography?
+
+Water drop photography is a style of photography that uses precise timing to capture the unique shapes and colors of impacting drops of liquids.
+
+![Water Drop]({{site.baseurl}}/assets/images/Dirk_Wohlrabe_WaterDrop.png){: .align-center}
+
+# How does MiniDrop Work?
+
+MiniDrop uses a popular WiFi/Bluetooth to bring wireless connectivity to control both the electromechanical switch (the solenoid) and trigger the camera to take the picture.
+
+The design is completely open source, check out the documentation pages for all the details of how it works.
+
+The quick start guide can help you get up and running.
