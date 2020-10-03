@@ -10,12 +10,12 @@ header:
   actions:
     - label: "View Source on Github"
       url: "https://github.com/ChandlerMcCowan/ESP32MiniDrop"
-excerpt: "Open Source water drop controller, in a small, low cost package; A Bluetooth connected 12V solenoid driver for great water drop photography."
+excerpt: "Open Source water drop photography controller in a small, low cost package"
 
 feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Project Overview"
-    excerpt: "Learn how everything connects together and what to expect from this device"
+    excerpt: "See how all the parts work together to create stunning photos"
     url: "about"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -23,13 +23,13 @@ feature_row:
     alt: "Documentation"
     title: "Documentation"
     url: "docs"
-    excerpt: "Learn more about how the device works, view schematics and CAD drawings"
+    excerpt: "Learn more about how the device works, view schematics, code, and CAD drawings"
     btn_label: "Read the docs"
     btn_class: "btn--primary"
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "Development Blog"
     title: "Development Blog"
-    excerpt: "Read the latests development posts about the project."
+    excerpt: "Read the latest development posts about the project."
     url: "blog"
     btn_label: "Read More"
     btn_class: "btn--primary"
